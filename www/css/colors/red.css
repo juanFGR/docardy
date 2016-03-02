@@ -1,0 +1,147 @@
+/*==============================================
+[Red color stylesheet red.css]
+
+Author:	SINDEVO.COM - Smart Internet Development
+Template:	Mobix - Mobile Web APP Template
+================================================*/
+
+/*===============================================*/
+/* MAIN COLOR */
+/*===============================================*/	
+a, blockquote span {
+color: #811308;
+}
+a.button_full, a.button_small, .call_button a{
+background-color:#811308; 
+}
+.button {
+border: 1px solid #811308;
+color: #811308;
+}
+.button.active {
+background: #811308;
+}
+#pages_maincontent h3{
+color:#811308;
+}
+.photo-categories a.active{
+background-color:#811308;
+}
+.post_date{
+color:#811308;
+}
+.list-block .swipeout-actions-left a,
+.list-block .swipeout-actions-right a {
+background: #811308;
+}
+.contactform input.form_submit, .loginform input.form_submit, .commentform input.form_submit{ 
+background-color:#811308;
+}
+ul.responsive_table li:first-child{
+background-color:#811308;
+color:#FFFFFF;
+}
+li.table_row{
+background-color:#e6e6e6;
+}
+
+.btni {
+  color:rgba(211,39,23,1);
+  width: 100%;
+  text-align: center;
+  font-size: 35px;
+  background: #ffffff;
+  padding: 10px 20px 10px 20px;
+  border: solid #bababa 1px;
+  text-decoration: none;
+  padding: 4px !important;
+}
+
+.btni:hover {
+  text-decoration: none;
+}
+
+input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fff;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  1;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #fff;
+}
+input:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+  color:    #fff;
+}
+
+
+/*===============================================*/
+/* HOME BG AND PAGES HEADER BG */
+/*===============================================*/	
+.homepage{
+background: rgba(211,39,23,1);
+background: -moz-linear-gradient(45deg, rgba(211,39,23,1) 0%, rgba(246,44,9,1) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(211,39,23,1)), color-stop(100%, rgba(246,44,9,1)));
+background: -webkit-linear-gradient(45deg, rgba(211,39,23,1) 0%, rgba(246,44,9,1) 100%);
+background: -o-linear-gradient(45deg, rgba(211,39,23,1) 0%, rgba(246,44,9,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(211,39,23,1) 0%, rgba(246,44,9,1) 100%);
+background: linear-gradient(45deg, rgba(211,39,23,1) 0%, rgba(246,44,9,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d32717', endColorstr='#f62c09', GradientType=1 );color: white !important;
+background-attachment:fixed;
+-webkit-background-size: 100%; 
+-moz-background-size: 100%;
+-o-background-size: 100%;
+background-size: 100%;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover; 
+background-size: cover;
+}
+.navbarpages{
+background:url(../../images/colors/red/header.jpg) no-repeat center center;
+}
+/*===============================================*/
+/* MAIN NAV LINKS */
+/*===============================================*/	
+.main-nav ul li{
+background: #8a2015;
+border-bottom:1px #b83a2d solid;
+}
+.main-nav ul li a{
+color:#e7a7a0;
+}
+/*===============================================*/
+/* POPUPS AND TOOLBAR */
+/*===============================================*/	
+.popup, .page_content_menu{
+background: #72150b;
+}
+.popup-login, .popup-signup, .popup-forgot{
+background-color:#263239;
+}
+.toolbar:before {
+background-color: #2e0c0b;
+}
+/*===============================================*/
+/* LEFT AND RIGHT SLIDE PANEL */
+/*===============================================*/	
+.panel {
+background:#731b11;
+}
+.user-nav ul li, ul.popular_posts li{
+border-bottom:1px #8d291d solid;
+}
+/* MENU OPENER ICON */
+ul.toolbar_icons li.menuicon{
+background-color:#ca1c0b;
+}
+
+/* PANEL CLOSE BUTTON */
+.close_popup_button a{
+background-color:#ca1c0b;
+}

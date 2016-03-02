@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="font-awesome-4.5.0/css/font-awesome.css"  rel="stylesheet" type="text/css"/>
+<title>Documento sin título</title>
+</head>
+
+<body class="fondo" style="color:white !important;">
+<div class="container">
+<div class="col-xs-offset-3 col-xs-6 col-md-6">
+    <div class="form-area">  
+        <form id="contact-form" name="contact-form" role="form">
+             <div class="col-xs-offset-3 col-md-6" ><h3 style="margin-bottom: 25px; text-align: center;"><img src="Blanco-Fondo-Transparente-540x153.png" width="100%" /></div>
+                   
+        <br style="clear:both">
+
+                   <div style="text-align:center"> Estamos desarrollando un idea que te ayudará a mejorar tus relaciones profesionales<br /><br /> ¿Te apuntas?<br /><br /> <h1><b>Inscríbite a nuestro newsletter</b></h1></h3></div>
+    				<div class="form-group">
+						<input type="text"  id="name" name="name" placeholder="Nombre y Apellido" required>
+					</div>
+					<div class="form-group">
+						<input type="text"  id="email" name="email" placeholder="Email" required>
+					</div>
+					<div class="form-group">
+						<input type="text"  id="subject" name="subject" placeholder="Profesión" required>
+					</div>
+                    <div class="form-group">
+                    <textarea class="form-control" type="textarea" id="message" placeholder="Algo interesante" maxlength="140" rows="7"></textarea>
+                        
+                    </div>
+            
+        <button type="submit" id="submit" name="submit" class="btn pull-right">Submit Form</button>
+        </form>
+    </div>
+</div>
+</div>
+
+
+
+   
+    <script src="js/jquery-2.2.0.min.js" type="text/javascript" ></script>
+    <script src="js/parse-1.6.14.min.js" type="text/javascript" ></script>
+	<script>
+        Parse.initialize("Vn3IGfSR9TI5K4qyc4L5GJ1mPMQtK7lq0CzOrfMX", "VSP8xmUhuPaUiPCShdtzrz9a3RSrVUUE3q5BF5yc");
+$(document).ready(function(e) {
+	var ParseObj = Parse.Object.extend('newsletter'); //create local parse object from your Parse class
+
+        $("#contact-form").submit(function(e) {
+        //on form submit
+            e.preventDefault();
+            //get data from form
+            var data = {
+                name: $("#name").val(),
+                email: $("#email").val(),
+                profession: $("#subject").val()
+            };
+
+            //create new Parse object
+            parseObj = new ParseObj();
+
+            //match the key values from the form, to your parse class, then save it
+            parseObj.save(data, {
+                    //if successful
+                    success: function(parseObj) {
+                            alert("Guardado!")
+                        }
+                    ,
+                    error: function(parseObj, error) {
+                        console.log(parseObj);
+                        console.log(error);
+						
+					/*	
+						alert("Ddd");
+if (typeof localStorage["contact"] == "undefined") {
+ localStorage["contact"] = "{ 'name': 'name', 'email': 'email', 'profession': 'profession'}";
+}
+
+						var dataSet = JSON.parse(localStorage["contact"]);
+						dataSet.people = [];
+dataSet.people = push = { 
+  'name': parseObj.get('name'), 'email': parseObj.get('email'), 'profession': parseObj.get('profession')
+  };
+
+      localStorage["contact"] = JSON.stringify(dataSet);
+console.log(JSON.stringify(dataSet));*/
+                    }
+                }
+            );
+        });
+    
+});
+        
+    </script>
+</body>
+</html>

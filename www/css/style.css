@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+.fondo{
+	background: #ff4929;
+background: -moz-linear-gradient(top, #ff4929 0%, #ff644d 7%, #ff2205 54%, #ff270a 86%, #ff230f 88%, #ff230f 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, #ff4929), color-stop(7%, #ff644d), color-stop(54%, #ff2205), color-stop(86%, #ff270a), color-stop(88%, #ff230f), color-stop(100%, #ff230f));
+background: -webkit-linear-gradient(top, #ff4929 0%, #ff644d 7%, #ff2205 54%, #ff270a 86%, #ff230f 88%, #ff230f 100%);
+background: -o-linear-gradient(top, #ff4929 0%, #ff644d 7%, #ff2205 54%, #ff270a 86%, #ff230f 88%, #ff230f 100%);
+background: -ms-linear-gradient(top, #ff4929 0%, #ff644d 7%, #ff2205 54%, #ff270a 86%, #ff230f 88%, #ff230f 100%);
+background: linear-gradient(to bottom, #ff4929 0%, #ff644d 7%, #ff2205 54%, #ff270a 86%, #ff230f 88%, #ff230f 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4929', endColorstr='#ff230f', GradientType=0 );
+}
+
